@@ -1,7 +1,7 @@
 import type { NodeData, NodeType } from "../utils/types";
 import { BasicNode } from "./BasicNode";
-import { ImageNode } from "./imageNode";
-import { PageNode } from "./PageNode";
+// import { ImageNode } from "./imageNode";
+// import { PageNode } from "./PageNode";
 
 type NodeTypeSwitcherProps = {
   node: NodeData;

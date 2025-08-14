@@ -12,7 +12,7 @@ import {
 } from "@dnd-kit/sortable";
 
 export const Page = () => {
-  const { title, nodes, addNode, cover, setCoverImage, reorderNodes, setTitle } = useAppState();
+  const { title, nodes, addNode, reorderNodes, setTitle } = useAppState();
 
   const [focusedNodeIndex, setFocusedNodeIndex] = useFocusedNodeIndex({
     nodes,

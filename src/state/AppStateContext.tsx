@@ -1,7 +1,7 @@
 import React from "react";
 import { usePageState } from "./usePageState";
 import type { Page } from "../utils/types";
-import { withInitialState } from "./withInitialState";
+// import { withInitialState } from "./withInitialState";
 
 type AppStateContextType = ReturnType<typeof usePageState>;
 
