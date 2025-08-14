@@ -20,7 +20,7 @@ export const BasicNode = ({
 
 }: BasicNodeProps) => {
   const nodeRef = useRef<HTMLDivElement>(null);
-  const showCommandPanel = isFocused && node?.value?.match(/\//);
+  const showCommandPanel = isFocused && node?.value?.match(/^\//);
 
   const { addNode, changeNodeValue, changeNodeType, removeNode } =
     useAppState();
