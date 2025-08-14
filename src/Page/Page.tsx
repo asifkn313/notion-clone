@@ -31,7 +31,7 @@ export const Page = () => {
       <div>
         <Title addNode={addNode} title={title} changePageTitle={setTitle} />
         <DndContext onDragEnd={handleDragEvent}>
-          <SortableContext items={nodes.map((node) => node.id)} strategy={verticalListSortingStrategy}>
+          <SortableContext items={nodes} strategy={verticalListSortingStrategy}>
             {nodes.map((node, index) => (
               <NodeContainer
                 key={node.id}
