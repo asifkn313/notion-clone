@@ -1,9 +1,9 @@
 import { useEffect, useRef } from "react";
 import type { NodeData, NodeType } from "../utils/types";
 import styles from "./Node.module.css";
+import cx from "classnames";
 import { useAppState } from "../state/AppStateContext";
 import { CommandPanel } from "./CommandPanel";
-import cx from "classnames";
 
 type BasicNodeProps = {
   node: NodeData;
@@ -17,9 +17,10 @@ export const BasicNode = ({
   updateFocusIndex,
   index,
   isFocused,
+
 }: BasicNodeProps) => {
   const nodeRef = useRef<HTMLDivElement>(null);
-  const showCommandPanel = isFocused && node?.value?.match(/^\//);
+  const showCommandPanel = isFocused && node?.value?.match(/\//);
 
   const { addNode, changeNodeValue, changeNodeType, removeNode } =
     useAppState();
